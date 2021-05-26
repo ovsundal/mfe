@@ -4,3 +4,6 @@
 /packages/dashboard/node_modules/
 /packages/marketing/node_modules/
 /.idea
+node_modules
+dist
+.DS_Store

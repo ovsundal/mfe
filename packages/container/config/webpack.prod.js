@@ -8,7 +8,8 @@ const domain = process.env.PRODUCTION_DOMAIN;   // defined global we get from aw
 const prodConfig = {
     mode: 'production',
     output: {
-        filename: '[name].[contenthash].js' //  cache bust the new prod output file
+        filename: '[name].[contenthash].js', //  cache bust the new prod output file
+        publicPath: '/container/latest/'  // used anytime some part of webpack tries to refer to a file built by webpack
     },
     plugins: [
         new ModuleFederationPlugin({

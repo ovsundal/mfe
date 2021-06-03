@@ -6,10 +6,12 @@ import App from './App';
 // Mount function to start up the app. We are exporting the mount function instead of a React component because
 // we dont want the container app to assume that a child is using any particular framework (near-zero coupling between
 // container and child apps. This function signature can be used regardless of js framework
-const mount = (el, {onNavigate, defaultHistory}) => {
+const mount = (el, {onNavigate, defaultHistory, initialPath}) => {
     
     // if in development and isolation, use browser history. If not, use memory history
-    const history = defaultHistory || createMemoryHistory();
+    const history = defaultHistory || createMemoryHistory({
+        initialEntries: [initialPath],
+    });
     
     if(onNavigate) {
         history.listen(onNavigate);

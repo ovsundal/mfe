@@ -21,6 +21,7 @@ const devConfig = {
              // key value pairs. Keys are the names of the different modules we're going to try import into our container
               marketing: 'marketing@http://localhost:8081/remoteEntry.js', // marketing has to match the name of the marketing webpack config file
               auth: 'auth@http://localhost:8082/remoteEntry.js',
+              dashboard: 'dashboard@http://localhost:8083/remoteEntry.js',
           },
           shared: packageJson.dependencies
       }),

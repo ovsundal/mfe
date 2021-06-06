@@ -21,7 +21,7 @@
         <span class="count revenue">$3,200</span>
       </div>
     </div>
-
+<!---->
     <div class="p-col-12 p-md-6 p-xl-3">
       <div class="highlight-box">
         <div class="initials" style="background-color: #007be5; color: #00448f">
